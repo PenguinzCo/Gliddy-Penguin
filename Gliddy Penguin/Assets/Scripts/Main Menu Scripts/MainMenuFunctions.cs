@@ -21,4 +21,12 @@ public class MainMenuFunctions : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void openInstructions()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void openSettings()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
