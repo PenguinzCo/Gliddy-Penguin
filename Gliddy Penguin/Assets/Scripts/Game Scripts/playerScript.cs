@@ -53,7 +53,7 @@ public class playerScript : MonoBehaviour
 
         // move player to desired lane
         // idk how this works, all I know is my previous solution didn't work because i never heard of GetKeyDown
-        Vector3 targetPos = transform.position.z * transform.forward + transform.position.y * transform.up;
+        Vector3 targetPos = new Vector3(0, transform.position.y, transform.position.z);
 
         if (desiredLane == 0)
         {
@@ -61,7 +61,7 @@ public class playerScript : MonoBehaviour
         }
         else if (desiredLane == 2)
         {
-            targetPos = Vector3.right * laneDistance;
+            targetPos += Vector3.right * laneDistance;
         }
 
         transform.position = Vector3.Lerp(transform.position, targetPos, 10 * Time.deltaTime);
