@@ -12,7 +12,7 @@ public class playerScript : MonoBehaviour
 
     // 0 = left; 1 = middle; 2 = right
     public int desiredLane = 1;
-    public float laneDistance = 2;
+    public float laneDistance = 5;
 
     // Start is called before the first frame update
     void Start()
